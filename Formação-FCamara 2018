@@ -1,0 +1,78 @@
+1. Se você tivesse 5 diferentes arquivos de folha de estilo, qual seria a melhor forma de integrá-los no site?
+Através da propriedade "@import" na qual escrevo o código fazendo referência à página css localizada no servidor de hospedagem.
+
+
+2. Fale 3 formas de diminuir o page load (Tempo de carregamento real e percebido).
+a) Otimizar as requisições de Javascript reduzindo o numero destas, e diminuir a quantidade de dados a serem baixados.
+b) Otimizar o HTML, removendo comentários não essenciais a fim de facilitar a leitura do arquivo.
+c)  Verificação da hospedagem e consulta ao banco de dados.. Muitas vezes um servidor de hospedagem que não tem uma boa infraestrutura pode elevar o tempo de carregamento da página.
+
+
+3. Quais as ferramentas você usa para testar a performance do seu código?
+PageSpeed – Google. Ferramenta que mede a performance de páginas para computadores e dispositivos móveis.
+
+
+4. Considere o HTML5 como uma plataforma web aberta. Quais são os blocos de construção de HTML5? 
+<!DOCTYPE HTML> (Utilizado para definir o site como HTML5)
+<html lang="pt-br"> (Tag padrão ao iniciar um código HTML e identificar o idioma do documento)
+<header> (Cabeçalho de uma página ou sessão)
+		<meta charset="UTF-8"> (Tipo de codificação)
+		<link rel="stylesheet" type="text/css" href="estilo.css"> (Referência a uma olha de estilo CSS)
+		<title> Teste </title> (Título da Página)
+</header> (Tag de fechamento)
+	
+<body> (Corpo da página)
+	<header>
+	</header> (Tag de fechamento)
+		
+	<nav> (Agrupa uma lista de links para outra parte da página)
+		   <ul>
+			 <li><a href="#">link1</a></li><!-- Tag de fechamento -->
+			 <li><a href="#">link2</a></li><!-- Tag de fechamento -->
+		   </ul> (Tag de fechamento)
+		</nav> (Tag de fechamento)
+		
+<section> (Utilizado para dividir o conteudo em sessões da página, que pode conter elementos como o Header)
+<article> (Destina-se a dividir um conteúdo, sem uma finalidade específica)
+	<aside> (Tag utilizada para fazer referências ao conteudo principal à sua volta (informações/publicidade etc) )
+				
+	</aside> (Tag de fechamento)
+</article> (Tag de fechamento)
+</section> (Tag de fechamento)
+		
+	<footer> (Rodapé da página)
+		
+	</footer> (Tag de fechamento)
+</body> (Tag de fechamento)
+</html> (Tag de fechamento)
+
+
+5. Você pode explicar a diferença entre GET e POST?
+O método GET solicita algum recurso/informação ao servidor; já o método POST é utilizado para envio de dados de forma segura, não estando sujeitos à visualização através da URL (como no método GET)
+
+
+6. Liste quantas propriedades display você puder lembrar.
+•	Inline
+•	block
+•	inline-block
+•	list-item.
+
+
+7. Qual a diferença entre inline e inline-block?
+O valor “inline” permite que elementos fiquem ao lado do outro na página, porém, os elementos com Inline não aceitam alterações de altura e largura, seu tamanho é definido pelo conteúdo que eles contêm. Dessa forma quando for necessário definir uma altura/largura para esses elementos, utilizamos o valor “block”. Logo, o valor “inline-block” serve para deixar os elementos alinhados ao lado do outro com altura/largura previamente definidos pelo desenvolvedor.
+
+
+8. Qual a diferença entre elementos posicionados de forma relativa, fixa, absoluta e estática?
+Relativa – Como o nome sugere, a posição “relative” especifica uma posição relativa do elemento em relação a outro. Usada quando temos diversos elementos na página, sendo possível deixar um sobreposto ao outro, utilizamos então a propriedade “position” com relative (position: relative;).
+Absoluta – A position “absolute” faz com que o elemento saia da hierarquia definida pelo HTML, fixando-o em qualquer ponto do browser. 
+Fixa – Apesar de parecido com o absolute, o “fixed” obedece (em termos de layout) ao navegador. Isto é, ao navegarmos na página subindo e descendo por ela, o elemento permanece na mesma posição sempre.
+Estática – Valor padrão definido pelo browser quando não se especifica o valor da propriedade “position”; em outras palavras, o elemento fica inerte na página.
+
+
+9. Qual a diferença entre .call e .apply?
+Uma das diferenças entre eles é que o call aceita uma lista de argumentos, enquanto o apply aceita somente uma matriz de argumentos.
+
+
+10. Qual a diferença entre == e ===?
+O operador == compara se os valores são iguais ( 5 == 5 // true)
+Já o operador === compara o valor e o tipo de variável ( 5 === ‘5’ // false – ou seja, valores iguais, mas variáveis diferentes). 
