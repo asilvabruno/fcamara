@@ -1,2 +1,0 @@
-# fcamara
-Repositório de Aprendizado
